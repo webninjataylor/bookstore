@@ -15,3 +15,5 @@
 /log/*
 !/log/.keep
 /tmp
+# Ignore Sublime Text 2 project files
+*.sublime-*
