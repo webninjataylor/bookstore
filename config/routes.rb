@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # patch "/books/:id" => "books#update"
   # delete "/books/:id" => "books#destroy"
   resources :books
+  root 'books#index'
 
 
   
