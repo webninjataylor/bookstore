@@ -17,7 +17,7 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
     if @book.save
-      redirect_to @book
+      redirect_to @book, notice: "#{@book.title} was created!"
     else
       render :new
     end
@@ -28,7 +28,7 @@ class BooksController < ApplicationController
 
   def update
     if @book.update(book_params)
-      redirect_to @book
+      redirect_to @book, notice: "#{@book.title} was updated!"
     else
       render :new
     end
