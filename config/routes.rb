@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   # get "/books/:id/edit" => "books#edit", as: 'edit_book'
   # patch "/books/:id" => "books#update"
   # delete "/books/:id" => "books#destroy"
-  resources :books
+  resources :books do
+    get 'page/:page', :action => :index, :on => :collection
+  end
   root 'books#index'
 
 
