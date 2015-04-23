@@ -6,6 +6,7 @@
 	<p><label>Author:</label> <%= @book.author %></p>
 	<p><label>Pages:</label> <%= number_with_delimiter(@book.pages) %></p>
 	<p><label>Price:</label> <%= number_to_currency(@book.price) %></p>
+  <p><label>Average Review:</label> <%= format_average_stars(@book) %></p>
 </article>
 
 <p>
