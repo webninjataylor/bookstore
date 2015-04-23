@@ -48,4 +48,5 @@ gem 'autoprefixer-rails'
 # Pagination...
 gem 'kaminari'
 gem 'kaminari-bootstrap', '~> 3.0.1'
-
+# Adds average and other useful methods to enumerables
+gem 'powerpack'
