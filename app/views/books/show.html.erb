@@ -8,6 +8,12 @@
 	<p><label>Price:</label> <%= number_to_currency(@book.price) %></p>
 </article>
 
+<p>
+  Read all
+  <%= link_to pluralize(@book.reviews.size, 'review'), 
+                        book_reviews_path(@book) %>
+</p>
+
 <%= link_to 'All Books', books_path %> | <%= link_to 'Edit', edit_book_path(@book) %>
 
 <%= button_to 'Delete', @book,
